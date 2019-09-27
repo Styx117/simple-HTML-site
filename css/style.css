@@ -1,0 +1,75 @@
+.layerMain
+{
+	height:100%;
+	width:100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+#backgroundImg
+{
+	background-image: url("../pics/AC.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; 
+	height: 750px;
+	width: 100%;
+	text-align: center;
+}
+
+#bgImgHolder
+{
+	background-color: black;
+}
+#welcomeInfo
+{
+	font-size: 5.4vw;
+	color:white;
+	padding-top: 250px;
+	text-shadow: 9px 9px 9px #000000;
+}
+#tabs-1, #tabs-2, #tabs-3
+{
+	padding-top: 30px;
+	text-align: center;
+}
+input[type=text], select, textarea 
+{
+	width: 500px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+.container
+{
+	background-color: #f7f7f7;
+	height: 100%;
+	padding-bottom: 100px;
+}
+.displayVal
+{
+	color:#ff0000;
+}
+a:hover 
+{
+	cursor:pointer;
+}
+#loginCard
+{
+	margin: auto;
+	margin-top: 200px;
+	height: 500px;
+	border-radius: 5px;
+	padding: 10px;
+	text-align:center;
+	background-color: rgba(0, 0, 0, 0.8);
+	color:#ffffff;
+
+}
+.btn
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}

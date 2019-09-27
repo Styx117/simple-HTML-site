@@ -1,0 +1,36 @@
+.main {
+	border:2px solid #ffffff;
+	border-radius: 5px;
+}
+
+.month {
+	background-color:#ffffff;
+	font:bold 12px verdana;
+	color:#000000;
+	padding: 5px;
+}
+
+.daysofweek {
+	border:2px solid #bdc3c7;
+	background-color:#bdc3c7;
+	font:bold 12px verdana;
+	color:#000000;
+	padding: 15px;
+}
+
+.days {
+	font-size: 14px;
+	font-family:verdana;
+	color:#000000;
+	background-color: #ffffff;
+	padding: 2px;
+	border:0px solid #7f8c8d;
+}
+
+.days #today{
+	border:10px solid #0a9298;
+	border-radius: 2px;
+	background-color: #0a9298;
+	font-weight: bold;
+	color:#fff;
+}

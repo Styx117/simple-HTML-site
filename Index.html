@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>In The Zone</title>
+	<meta charset="UTF-8">
+	<!-- Importing all required libraries and frameworks such as JQuery and Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Setting up the size of the web page to allow for responsive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Linking external stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cal-style.css">
+	<!-- Importing External Javascript such as code for the Calendar and validation for the contact page -->
+	<script type="text/javascript" src="js/basicCalendar.js"></script>
+	<script type="text/javascript" src="js/contactValidation.js"></script>
+	<!-- Code for the Tab Widget, this is JQuery -->
+	<script>
+		$( function() {
+			$( "#tabs" ).tabs({
+				show: { effect: "blind", duration:800 }
+			});
+		} );
+	</script>
+
+	
+</head>
+
+<body onLoad="window.scroll(0, 0)">
+
+	<div id="tabs">
+		<!-- Making the Nav bar with all of it's links to other pages and links to show/hide the Tab pages -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<ul class="navbar-nav">
+					<li class="nav-item-active">
+						<a class="navbar-brand" style="color:#ffffff;">In The Zone</a>
+					</li>
+					<li class="nav-item">
+						<a id="first" class="nav-link" href="#tabs-1">General info</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#tabs-2">Find us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#tabs-3">Contact us</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="DMC.html">Devil May Cry 5</a>
+							<a class="dropdown-item" href="ME.html">Mirror's Edge</a>
+							<a class="dropdown-item" href="XMEN.html">X-MEN Origins: Wolverine</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a id="tglCal"class="nav-link">Show Calendar</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+		<!-- setting up the main background image for the Webpage which will change every 3 seconds because of the JavaScript code i will make -->
+		<!-- This area will also contain the Calendar as well as a layer for the background images and text that displays "Welcome" -->
+		<div id="bgImgHolder">
+			<div id="backgroundImg">
+				<div class="layerMain">
+					<div id ="welcomeInfo">Welcome</div>
+					<div id="fullCal" style="float:right;">
+						<div id="myCal"></div>
+						<div><p id="myCalText"></p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main Body of the Webpage, this is where most of the text will go -->
+		<div class = "container" style="text-align: center;"> 
+			<!-- First Tab, The General info page, displaying general information about In The Zone, with pictures and other pleasing aesthetics such as lists and a Logo -->
+			<div id="tabs-1">
+				<div class="imgLogo"><img src="pics/zLogo.JPG" alt="Zone-Logo"></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+					<h1>In The Zone!</h1>
+					<p>Welcome to InTheZone, a ‘bricks and mortar’ and online store that specialises in gaming and your destination for gaming greatness. By combining our expert, specialist, knowledge with an extensive range of games, consoles, phones, PC components and more, we offer an unparalleled gaming experience. From our midnight launches, through to our overnight gaming lock-ins, we boast one of the most exciting gaming communities out there. 
+					</p>
+				</div>
+
+				<div class="imgStore"><img src="pics/zStore.JPG" alt="Zone-Store" style="height: 300px;"></div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12" style="text-align: left;">
+					<p>In store we can offer you a range of services, from:
+						<ul>
+							<li>Pre-owned: Play for less with our huge range of pre-owned games, consoles and more!</li>
+							<li>Trade in: Trade in for cash or credit for your consoles, games, phones & tablets</li>
+							<li>ZONE Reward: Earn points on all your purchases, trade-ins and more with ZONE Reward</li>
+							<li>ZONE Elite: Boost your rewards with our ZONE Elite program, complete with exclusive offers, deals and competitions</li>
+							<li>Click and reserve: Click and reserve online and visit us in store to collect. Go home with everything you need</li>
+							<li>Finance: Spread the cost of big purchases with ZONE Finance, available on all orders over £150</li>
+							<li>Expert advice: Get great personal advice on the latest games, consoles and PC components</li>
+						</ul>
+						You can find our main Birmingham store in Unit SU312 in Bullring, which can be seen on the map in the "Find us" Page.
+
+					</p>
+					<div class="row">
+						<div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 imgStore"><img src="pics/mainWebsite.JPG" alt="Zone-Store" style="height: 300px;"></div>
+						<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">Visit our main website at <a href="https://www.game.co.uk/">Game.co.uk</a> where you can see all of our other amazing products and games, as well as deals and even other store locations all around the country! From Tech to merchandise, we have it all, whether you need gaming chairs, a new console or even a headset, we can provide! if you sign up to be a special member, you will have amazing perks such as discounts on certain items, cheap tickets to our annual events and you may be chosen at random to come and play with some of your favourite Streamers and Gamers!! </p>
+					</div>
+				</div>
+			</div>
+			<!-- Second Tab, the Find us tab which simply displays an interactive map with the location of the store and a nice header-->
+			<div id="tabs-2">
+				<h1>You can find us using the map below!</h1>
+				<br>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.05454640898!2d-1.8962904838839616!3d52.4781480798064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc8897a734ad%3A0xc60deb485d33d72e!2sThe+Bullring+Shopping+Centre%2C+Birmingham+B5+4BU!5e0!3m2!1sen!2suk!4v1546549317523" width="100%" height="1000px" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<!-- Third and final Tab, The contact us Page, contains input boxes of different types each with validation and their own error messages which are usign the Javascript code from "contactValidation.js" -->
+			<div id="tabs-3">
+				<form>
+					<h3>Full Name</h3><br> 
+					<p id="nameVal" class="displayVal"></p><br>
+
+					<input type="text" id="fullName" placeholder="Your full name.."><br><br>
+
+					<h3>Email</h3><br>
+					<p id="emailVal" class="displayVal"></p><br>
+
+					<input type="text" id="email" placeholder="Your Email.."><br><br>
+
+					<h3>Select a subject</h3><br>
+					<p id="subjectVal" class="displayVal"></p><br>
+
+					<select id="subject">
+						<option value="Select">Select</option>
+						<option value="error">Report an Error</option>
+						<option value="feedback">Give Feedback / Help</option>
+						<option value="question">Got a question?</option>
+						<option value="Other">Other</option>
+					</select><br><br>
+
+					<h3>Write your issue / question / feedback / other</h3><br>
+					<p id="commentVal" class="displayVal"></p><br>
+					<textarea id="comment" placeholder="Write something.." style="height:170px"></textarea><br><br>
+				</form>
+				<button onclick="validate();" id ="contactButton">Submit</button>
+			</div>
+		</div>
+	</div>
+	<!-- End of Tabs -->
+
+</body>
+<script>
+	//When the page loads, run the ShowCal function which is defined below (displays the Calendar)
+	showCal();
+	function showCal(){
+		var todaydate = new Date();
+		var curday = todaydate.getDay();
+		var curmonth=todaydate.getMonth()+1; 
+		var curyear=todaydate.getFullYear(); 
+
+		$("#myCal").html(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1));
+		if (curday == 0) 
+		{
+			$("#myCalText").text("Sunday's opening times: 10:00 - 15:00");
+		}
+		else if (curday == 1) 
+		{
+			$("#myCalText").text("Monday's opening times: 9:00 - 18:00");
+		}
+		else if (curday == 2) 
+		{
+			$("#myCalText").text("Tuesday's opening times: 9:00 - 18:00");
+		}
+		else if (curday == 3) 
+		{
+			$("#myCalText").text("Wednesday's opening times: 9:00 - 18:00");
+		}
+		else if (curday == 4) 
+		{
+			$("#myCalText").text("Thursday's opening times: 9:00 - 18:00");
+		}
+		else if (curday == 5) 
+		{
+			$("#myCalText").text("Friday's opening times: 9:00 - 18:00");
+		}
+		else if (curday == 6) 
+		{
+			$("#myCalText").text("Saturday's opening times: 10:00 - 15:00");
+		}
+	}
+	//Hide the Calendar when the page loads so that the user can toggle it on and off, and change the text of the toggle button depending on whether the calendar is visible.
+	$("#fullCal").hide();
+
+	$("#tglCal").click(function(){
+		$("#fullCal").toggle();
+
+		if($('#fullCal').is(':visible'))
+		{
+			$("#tglCal").text("Hide Calendar");
+		}
+		else 
+		{
+			$("#tglCal").text("Show Calendar");
+		}
+	});
+
+	//When the page loads, simulate a click on the first button so that the first Tab is selected
+	document.getElementById("first").click();
+
+	//Making the background image change every 3 seconds by looping through an array of images and constantly hiding the previous image and letting the next image fade in quickly
+	var bg = document.getElementById("backgroundImg");
+
+	var images = [
+	"XMEN.jpg",
+	"ME.jpg",
+	"DMC.jpg",
+	"AC.jpg"
+	]
+	var i = 0;
+
+	setInterval(function() {
+		$("#backgroundImg").hide();
+		bg.style.backgroundImage = "url(pics/" + images[i] + ")";
+		$("#backgroundImg").fadeIn("fast");
+
+
+		i = i + 1;
+		if (i == images.length) {
+			i = 0;
+		}
+	}, 3000);
+</script>
+</html>
